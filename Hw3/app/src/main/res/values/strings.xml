@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">作業三:Lin,Yan-Ting</string>
+    <string name="Sex">性別:</string>
+    <string name="Age">年齡:</string>
+    <string name="family">家人數量:</string>
+    <string name="suggest">建議:</string>
+    <string name="enter">確認</string>
+    <string name="hintSex">(請選擇性別)</string>
+    <string-array name="sex_list">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+</resources>
