@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hw11:Lin,Yan-Ting</string>
+    <string-array name="type">
+        <item>mobile</item>
+        <item>home</item>
+        <item>office</item>
+    </string-array>
+</resources>
