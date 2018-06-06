@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import a105590015.hw11.providers.FriendsContentProvider;
 
@@ -64,9 +65,11 @@ public class AddNewContact extends Fragment{
                 newRow.put("sex", mEdtNumber.getText().toString());
                 newRow.put("address", type);
                 mContRes.update(FriendsContentProvider.CONTENT_URI, newRow, mEdtName.getText().toString(), null);
+                Toast.makeText(getActivity(), "更新成功", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.menuItemDelete:
                 mContRes.delete(FriendsContentProvider.CONTENT_URI, mEdtName.getText().toString(), null);
+                Toast.makeText(getActivity(), "刪除成功", Toast.LENGTH_LONG).show();
         }
         return super.onContextItemSelected(item);
     }

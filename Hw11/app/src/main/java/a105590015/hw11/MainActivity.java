@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 newRow.put("sex", number);
                 newRow.put("address", type);
                 mContRes.insert(FriendsContentProvider.CONTENT_URI, newRow);
+                Toast.makeText(MainActivity.this, "新增成功", Toast.LENGTH_LONG).show();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -149,9 +150,9 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Add";
+                    return "Add & Update & Delete";
                 case 1:
-                    return "Search";
+                    return "Search & List";
                 default:
                     return null;
             }
