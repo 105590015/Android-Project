@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -28,9 +29,8 @@ public class MediaPlayService extends Service{
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Uri uriFile = Uri.fromFile(new File(
-                Environment.getExternalStorageDirectory().getPath() + "/song.mp3"));
-        player = MediaPlayer.create(this, uriFile);
+        player = MediaPlayer.create(this, R.raw.song);
+        player.setLooping(true);
         player.start();
 
         return super.onStartCommand(intent, flags, startId);
