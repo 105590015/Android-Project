@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                contact.clear();
+                searchContact.clear();
                 Cursor c = mFriendDb.query(true, DB_TABLE, new String[]{"name", "sex",
                         "address"}, 	null, null, null, null, null, null);
                 Cursor s = mFriendDb.query(true, DB_TABLE, new String[]{"name", "sex",
