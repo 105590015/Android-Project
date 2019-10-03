@@ -1,4 +1,5 @@
 ### 作業說明
+---
 1. Copy your HW#6 to another app and rename the app as HW#7
 2. Import HW#7 and modify the code according to the following requirements：
 * Change the app title to "作業七: your name".
